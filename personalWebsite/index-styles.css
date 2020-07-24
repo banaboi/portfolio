@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  width: 900px;
+  margin: 0 auto;
+
+    
+}
+
+header {
+  background-color: 25272e;
+  padding-bottom: 50px;
+  font-family: monospace;
+  text-align: justify;
+  position: relative;
+  top: 1500px;
+    
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+.menu-btn {
+  background-color: white;
+    color: white;
+  padding: 0;
+}
+
+main {
+  color: white;
+  font-family: "Cascadia Code";
+}
+
+.heading {
+  background-color: white;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  
+    
+}
+
+.lg-heading {
+  color: black;
+}
+
+
+.sm-heading {
+  color: black;
+}
+
+.space {
+  padding: 5px;
+}
+
+.sm-heading {
+  font-size: large;
+}
+
+/* Style the navigation menu */
+
+.a {
+  color: whitesmoke;
+}
+
+.nav-item {
+  padding: 10px;
+  text-align: justify;
+  display: inline;
+  padding-left: 30px;
+}
+
+.nav-link {
+  color: grey;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.topnav {
+  text-align: center;
+}
+
+.icons {
+    text-align: center;
+}
+
+.fa {
+    color: grey;
+    border-radius: 2px ;
+    border-color: #2196F3;
+    padding: 3px;
+}
+
+.fa:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.email {
+  padding-top: 15px;
+}
+
+#resume {
+  border-style: solid;
+  padding: 5px;
+}
+
+.myExperience-title {
+  text-align: left;
+  padding: 30px;
+  font-size: larger;
+  color: grey;
+  font-family: monospace;
+
+}
+
+.seperator {
+  position: relative;
+  bottom: 10px;
+  left: 8px;
+  color: grey;
+  font-size: x-large;
+}
+
+
+.sunswift {
+  position: absolute;
+  height: 100%;
+  width:  100%; /* or whatever width you want. */
+  max-height: 500px;
+  max-width:900px; /* or whatever width you want. */
+  display: inline-block;
+  background-image: url(/personalWebsite/images/eveSunset.jpg);
+  background-size: cover;
+  padding: 50px;
+}
+
+.sunswift-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+  font-family: "Quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sunswift-overlay:hover {
+  opacity: 1;
+
+}
+
+.title {
+  font-family: monospace;
+}
+
+
+.qantas {
+  position: absolute;
+  top: 820px;
+  height: 100%;
+  width:  100%; /* or whatever width you want. */
+  max-height: 500px;
+  max-width:900px; /* or whatever width you want. */
+  display: inline-block;
+  background-image: url(/personalWebsite/images/VH-YQU_16368156058Alec-Wilson.jpg);
+  background-size: cover;
+}
+
+.qantas-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+  font-family: "Quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.qantas-overlay:hover {
+  opacity: 1;
+
+}
+
+.qantas-title {
+  font-family: monospace;
+}
+
+.projects {
+  position: relative;
+  top: 1050px;
+}
+
+.projects-title {
+  text-align: left;
+  padding: 30px;
+  font-size: larger;
+  color: grey;
+  font-family: monospace;
+
+}
+
+
+.seperator {
+  position: relative;
+  bottom: 10px;
+  left: 8px;
+  color: grey;
+  font-size: x-large;
+}
+.react {
+  position: relative;
+  top: 0px;
+  width: 900px;
+  height: 600px;
+  border-style: solid;
+  border-color: grey;
+  background-image: url(/personalWebsite/images/reactIcon\ 800px.png);
+  background-size: cover;
+  background-position: -10px;
+}
+
+.react-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+  font-family: "Quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.react-overlay:hover {
+  opacity: 1;
+
+}
+
+.project-title {
+  font-family: monospace;
+  font-size: 22px;
+
+}
+
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  overflow-y: initial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  background-color: whitesmoke;
+  width: 700px;
+  height: 500px;
+  border-radius: 0.5rem;
+}
+
+.modal-image {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 100px;
+  background-size: cover;
+}
+
+.modal-title {
+  font-size: 13px;
+  position: absolute;
+  left: 20px;
+  width: 700px;
+  height: 400px;
+  text-align: center;
+  color: grey;
+}
+
+.modal-about-title {
+  padding-top: 10px;
+  padding-left: 5px;
+  position: absolute;
+  text-align: left;
+  left: 300px;
+  top: 110px;
+  color: grey;
+
+}
+
+.modal-about-description {
+  padding-top: 10px;
+  overflow-y: auto;
+  color: grey;
+  width: 350px;
+  text-align: justify;
+}
+
+.modal-links {
+  position: relative;
+  text-align: center;
+  top: 150px;
+}
+
+.modal-item {
+  display: inline-block;
+  top: 0px;
+  padding: 10px;
+  
+}
+
+.modal-link {
+  font-family: monospace;
+  color: grey;
+  text-decoration: none;
+  border-style: solid;
+  padding: 10px;
+}
+
+.modal-link:hover {
+  transition: 0.3s;
+  color: black;
+  
+}
+
+.modal-technologies {
+  position: relative;
+  left: 225px;
+  top: 40px;
+  height: 100px;
+  width: 500px;
+  padding: 5px;
+
+  
+}
+
+.tech {
+  display: inline-block;
+  padding: 5px;
+  border-style: groove;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: grey;
+}
+.close-button:hover {
+  background-color: white;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.bionicHand {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  width: 300px;
+  height: 205px;
+  border-style: solid;
+  border-color: grey;
+}
+
+
+/*.bionicHand-overlay{
+  position: absolute;
+  top: 100;
+  width: 300px;
+  height: 208px;
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+  font-family: "Quicksand";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bionicHand-overlay:hover {
+  opacity: 1;
+
+}*/
+
+
+.footer {
+  position: relative;
+  top: 900px;
+  text-align: justify;
+}
+
+.footer-description {
+  text-align: center;
+  color: grey;
+  font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
