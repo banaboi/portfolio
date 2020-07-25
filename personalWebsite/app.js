@@ -1,24 +1,61 @@
 
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".react");
-var closeButton = document.querySelector(".close-button");
+var reactModal = document.getElementById("react-modal");
+var reactTrigger = document.getElementById("react");
+var reactClose = document.getElementById("react-close-button");
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
+
+var vbaModal = document.getElementById("vba-modal");
+var vbaTrigger = document.getElementById("vba");
+var vbaClose = document.getElementById("vba-close-button");
+
+var portfolioModal = document.getElementById("portfolio-modal");
+var portfolioTrigger = document.getElementById("portfolio");
+var portfolioClose = document.getElementById("portfolio-close-button");
+
+function toggleReactModal() {
+    reactModal.classList.toggle("show-modal");
+}
+
+function toggleVbaModal() {
+    vbaModal.classList.toggle("show-modal");
+}
+
+function togglePortfolioModal() {
+    portfolioModal.classList.toggle("show-modal");
 }
 
 function windowOnClick(event) {
-    if (event.target === closeButton) {
-        toggleModal();
+    if (event.target === reactClose) {
+        toggleReactModal();
+    } else if (event.target === vbaClose) {
+        toggleVbaModal();
+    } else if (event.target === portfolioModal) {
+        togglePortfolioModal();
     }
 }
 
 function main () {
-    trigger.addEventListener('click', function () {
-        toggleModal() }
+    reactTrigger.addEventListener('click', function () {
+        toggleReactModal() }
     );
 
-    closeButton.addEventListener('click', function () {
+    vbaTrigger.addEventListener('click', function () {
+        toggleVbaModal() }
+    );
+
+    portfolioTrigger.addEventListener('click', function () {
+        togglePortfolioModal() }
+    );
+
+    reactClose.addEventListener('click', function () {
+        windowOnClick()}
+    );
+
+    vbaClose.addEventListener('click', function () {
+        windowOnClick()}
+    );
+
+    portfolioClose.addEventListener('click', function () {
         windowOnClick()}
     );
 }

@@ -15,6 +15,8 @@ body {
     
 }
 
+
+
 header {
   background-color: 25272e;
   padding-bottom: 50px;
@@ -108,6 +110,7 @@ main {
     border-color: #2196F3;
     padding: 3px;
 }
+
 
 .fa:hover {
     color: black;
@@ -240,19 +243,32 @@ main {
   color: grey;
   font-size: x-large;
 }
-.react {
+.project {
   position: relative;
   top: 0px;
   width: 900px;
   height: 600px;
   border-style: solid;
   border-color: grey;
-  background-image: url(/personalWebsite/images/reactIcon\ 800px.png);
   background-size: cover;
   background-position: -10px;
 }
 
-.react-overlay{
+#react {
+  position: relative;
+  background-image: url(/personalWebsite/images/reactIcon\ 800px.png);
+}
+
+#vba {
+  top: 1060px;
+  background-image: url(/personalWebsite/images/vba.png);
+}
+
+#portfolio {
+  top: 1070px;
+  background-image: url(/personalWebsite/images/portfolio.png);
+}
+.project-overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -269,7 +285,7 @@ main {
   transition: opacity 0.3s;
 }
 
-.react-overlay:hover {
+.project-overlay:hover {
   opacity: 1;
 
 }
@@ -280,9 +296,23 @@ main {
 
 }
 
+#react-modal {
+  position: fixed;
+}
+
+#vba-modal {
+  position: fixed;
+}
+
+#portfolio-modal {
+  position: fixed;
+}
+
+
 
 .modal {
-  position: fixed;
+  z-index: 9;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -291,7 +321,7 @@ main {
   opacity: 0;
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.3s, opacity 0.3s 0s, transform 0.3s;
 }
 .modal-content {
   overflow-y: initial;
@@ -377,9 +407,9 @@ main {
   height: 100px;
   width: 500px;
   padding: 5px;
-
-  
 }
+
+
 
 .tech {
   display: inline-block;
@@ -408,38 +438,6 @@ main {
   transform: scale(1.0);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-
-.bionicHand {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  width: 300px;
-  height: 205px;
-  border-style: solid;
-  border-color: grey;
-}
-
-
-/*.bionicHand-overlay{
-  position: absolute;
-  top: 100;
-  width: 300px;
-  height: 208px;
-  background: rgba(0,0,0,0.6);
-  color: #ffffff;
-  font-family: "Quicksand";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.bionicHand-overlay:hover {
-  opacity: 1;
-
-}*/
-
 
 .footer {
   position: relative;
